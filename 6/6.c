@@ -31,10 +31,8 @@ void addNode(Node **root, int val) {
 	while(prev != p->xor) { // gets to the final node in *p
 		tmp = p;
 		p = (Node*) ((uintptr_t) p->xor ^ (uintptr_t) (prev == NULL ? 0 : prev));
-		prev = p;
-		printf("a");
+		prev = tmp;
 	}
-	printf("b");
 	new->xor = p;
 	p->xor = (Node*) ((uintptr_t) p->xor ^ (uintptr_t) new);
 }
@@ -49,7 +47,7 @@ int getAt(Node *p, int index) {
 	while (i < index && prev != p->xor) {
 		tmp = p;
 		p = (Node*) ((uintptr_t) p->xor ^ (uintptr_t) (prev == NULL ? 0 : prev));
-		prev = p;
+		prev = tmp;
 		i++;
 	}
 	if(i != index)
@@ -62,12 +60,13 @@ int main() {
 	addNode(&root, 1);
 	addNode(&root, 2);
 	addNode(&root, 3);
-	//addNode(&root, 4);
+	addNode(&root, 4);
+	addNode(&root, 5);
 
-	printf("%d\n", root->val);
 	printf("%d\n", getAt(root, 0));
 	printf("%d\n", getAt(root, 1));
-	//printf("%d\n", getAt(root, 2));
-	//printf("%d\n", getAt(root, 3));
+	printf("%d\n", getAt(root, 2));
+	printf("%d\n", getAt(root, 3));
+	printf("%d\n", getAt(root, 4));
 	
 }
