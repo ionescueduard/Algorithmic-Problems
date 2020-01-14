@@ -3,10 +3,10 @@ def lengthLongestPath(input):
         maxLength = 0
         for line in input.split('\n'):
             depth = line.count('\t')
-            level[depth] = level[depth - 1] + len(line)
+            level[depth] = level[depth - 1] + len(line) - depth
             
             if '.' in line:
-                maxLength = max(maxLength, level[depth])
+                maxLength = max(maxLength, level[depth] + depth)
         
         return maxLength
         
