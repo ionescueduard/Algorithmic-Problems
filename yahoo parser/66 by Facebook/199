@@ -1,0 +1,18 @@
+This problem was asked by Facebook.
+
+Given a string of parentheses, find the balanced string that can be produced
+from it using the minimum number of insertions and deletions. If there are
+multiple solutions, return any of them. 
+
+For example, given "(()", you could return "(())". Given "))()(", you could
+return "()()()()".
+
+
+--------------------------------------------------------------------------------
+
+Are you underpaid? See salary bands and career ladders at top tech companies on 
+Levels.fyi [https://www.levels.fyi/?ref=dailycodingproblem.com]!
+
+
+--------------------------------------------------------------------------------
+

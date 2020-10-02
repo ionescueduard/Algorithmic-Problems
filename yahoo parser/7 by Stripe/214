@@ -1,0 +1,17 @@
+This problem was asked by Stripe.
+
+Given an integer n, return the length of the longest consecutive run of 1s in
+its binary representation.
+
+For example, given 156, you should return 3.
+
+
+--------------------------------------------------------------------------------
+
+Ready to interview? Apply to top tech companies and startups in seconds through 
+Talentvine, our exclusive candidate network
+[https://www.talentvine.io/?ref=dailycodingproblem]!
+
+
+--------------------------------------------------------------------------------
+
