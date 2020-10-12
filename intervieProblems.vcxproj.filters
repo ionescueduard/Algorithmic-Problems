@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\24">
+      <UniqueIdentifier>{16de4f54-7665-44ab-b6ee-5103ca7caf3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\20">
+      <UniqueIdentifier>{34b41d2d-fffc-4567-979c-569fc45e3dc3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\23">
+      <UniqueIdentifier>{414b2c57-5e9d-4e20-bd36-589f1af10e98}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="24\README.md">
+      <Filter>Source Files\24</Filter>
+    </None>
+    <None Include="20\README.md">
+      <Filter>Source Files\20</Filter>
+    </None>
+    <None Include="20\20.cpp">
+      <Filter>Source Files\20</Filter>
+    </None>
+    <None Include="23\23.py">
+      <Filter>Source Files\23</Filter>
+    </None>
+    <None Include="23\README.md">
+      <Filter>Source Files\23</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="24\24.cpp">
+      <Filter>Source Files\24</Filter>
+    </ClCompile>
+    <ClCompile Include="23\23.cpp">
+      <Filter>Source Files\23</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
