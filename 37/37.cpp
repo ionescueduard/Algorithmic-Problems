@@ -5,31 +5,60 @@
 
 using namespace std;
 
-void getReprezentation(int reprez, vector<int>& x, vector<int>& nums) {
-	int i = 0;
-	while (reprez != 0) {
-		if ((reprez & 1) == 1)
-			x.push_back(nums[i]);
-		i++;
-		reprez = reprez >> 1;
-	}
-}
+class AnotherSolution {
+public:
+	void subsets(vector<int>& nums, vector<vector<int>>& out) {
+		int count = static_cast<int>(pow(2, nums.size()));
+		out.reserve(count);
 
-void subsets(vector<int>& nums, vector<vector<int>>& out) {
-	int count = static_cast<int>(pow(2, nums.size()));
-	out.reserve(count);
-	for (int i = 0; i < count; i++) {
-		vector<int> x;
-		getReprezentation(i, x, nums);
-		out.push_back(x);
+		vector<int> inserter;
+		out.push_back(inserter);
+		helper(-1, nums, inserter, out);
 	}
-}
 
+private:
+	void helper(int lastIndexAdded, vector<int>& nums, vector<int> inserter, vector<vector<int>>& out) {
+		for (int i = lastIndexAdded + 1; i < nums.size(); i++) {
+			vector<int> newInserter(inserter);
+			newInserter.push_back(nums[i]);
+			out.push_back(newInserter);
+			helper(i, nums, newInserter, out);
+		}
+	}
+};
+
+
+class BestSolution {
+public:
+	void subsets(vector<int>& nums, vector<vector<int>>& out) {
+		int count = static_cast<int>(pow(2, nums.size()));
+		out.reserve(count);
+		for (int i = 0; i < count; i++) {
+			vector<int> x;
+			getReprezentation(i, x, nums);
+			out.push_back(x);
+		}
+	}
+
+private:
+	void getReprezentation(int reprez, vector<int>& x, vector<int>& nums) {
+		int i = 0;
+		while (reprez != 0) {
+			if ((reprez & 1) == 1)
+				x.push_back(nums[i]);
+			i++;
+			reprez = reprez >> 1;
+		}
+	}
+};
 
 int main() {
 	vector<int> nums = { 1, 2, 3 };
 	vector<vector<int>> out;
-	subsets(nums, out);
+
+	BestSolution bs;
+	AnotherSolution as;
+	as.subsets(nums, out);
 
 	cout << '[';
 	for (const vector<int>& elems : out) {
