@@ -52,13 +52,13 @@ private:
 	}
 };
 
-int main() {
+int main4() {
 	vector<int> nums = { 1, 2, 3 };
 	vector<vector<int>> out;
 
 	BestSolution bs;
-	AnotherSolution as;
-	as.subsets(nums, out);
+	//AnotherSolution as;
+	bs.subsets(nums, out);
 
 	cout << '[';
 	for (const vector<int>& elems : out) {
@@ -68,4 +68,5 @@ int main() {
 		cout << "], ";
 	}
 	getchar();
+	return 0;
 }

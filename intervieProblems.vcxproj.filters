@@ -22,6 +22,18 @@
     <Filter Include="Source Files\23">
       <UniqueIdentifier>{414b2c57-5e9d-4e20-bd36-589f1af10e98}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\31">
+      <UniqueIdentifier>{6bb458e6-e965-4eed-9a77-3faf7c096733}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\35">
+      <UniqueIdentifier>{492b6561-c762-4042-9be8-3f2ad6bab349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\37">
+      <UniqueIdentifier>{c0ab5683-e2b3-4ea0-80da-3af1c0fdef01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\42">
+      <UniqueIdentifier>{c46cbe80-d285-45b8-848f-e4a9bd969398}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="24\README.md">
@@ -39,6 +51,18 @@
     <None Include="23\README.md">
       <Filter>Source Files\23</Filter>
     </None>
+    <None Include="31\README.md">
+      <Filter>Source Files\31</Filter>
+    </None>
+    <None Include="35\README.md">
+      <Filter>Source Files\35</Filter>
+    </None>
+    <None Include="37\README.md">
+      <Filter>Source Files\37</Filter>
+    </None>
+    <None Include="40\README.md">
+      <Filter>Source Files\42</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="24\24.cpp">
@@ -46,6 +70,18 @@
     </ClCompile>
     <ClCompile Include="23\23.cpp">
       <Filter>Source Files\23</Filter>
+    </ClCompile>
+    <ClCompile Include="31\31.cpp">
+      <Filter>Source Files\31</Filter>
+    </ClCompile>
+    <ClCompile Include="35\35.cpp">
+      <Filter>Source Files\35</Filter>
+    </ClCompile>
+    <ClCompile Include="37\37.cpp">
+      <Filter>Source Files\37</Filter>
+    </ClCompile>
+    <ClCompile Include="40\40.cpp">
+      <Filter>Source Files\42</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

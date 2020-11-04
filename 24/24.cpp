@@ -51,7 +51,7 @@ public:
 	}
 };
 
-int main()
+int main1()
 {
 	Node* root = new Node(0);
 	root->l = new Node(2, root);

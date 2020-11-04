@@ -34,9 +34,10 @@ void sortInPlace(std::vector<int> &v)
 }
 
 
-int main()
+int main3()
 {
    std::vector<int> v = {'G', 'B', 'R', 'R', 'B', 'R', 'G'}; //should become ['R', 'R', 'R', 'G', 'G', 'B', 'B'].
    sortInPlace(v);
    getchar();
+   return 0;
 }

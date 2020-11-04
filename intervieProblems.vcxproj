@@ -24,10 +24,18 @@
     <None Include="23\23.py" />
     <None Include="23\README.md" />
     <None Include="24\README.md" />
+    <None Include="31\README.md" />
+    <None Include="35\README.md" />
+    <None Include="37\README.md" />
+    <None Include="40\README.md" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="23\23.cpp" />
     <ClCompile Include="24\24.cpp" />
+    <ClCompile Include="31\31.cpp" />
+    <ClCompile Include="35\35.cpp" />
+    <ClCompile Include="37\37.cpp" />
+    <ClCompile Include="40\40.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

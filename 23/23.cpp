@@ -59,7 +59,7 @@ int findShortestPath(int m[ROW][COL], Point source, Point destination)
 	return -1;
 }
 
-int main()
+int main2()
 {
 	int mat[ROW][COL] =
 	{
@@ -80,4 +80,5 @@ int main()
 	std::cout << findShortestPath(mat, source, dest);
 
 	getchar();
+	return 0;
 }
